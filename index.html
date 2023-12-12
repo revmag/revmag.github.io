@@ -1,2 +1,21 @@
-"Hello World" 
-"Click this link to know your details"
+<!DOCTYPE html>
+<html>
+<head>
+    <title>experiment</title>
+    <!-- Include the qrcode.js library -->
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <div id="qrcode"></div> <!-- Container for the QR code -->
+
+    <script>
+        // Create a new QR Code in the specified container
+        new QRCode(document.getElementById("qrcode"), {
+            text: "https://wa.me/qr/ALYTF4UTP4D2K1",
+            width: 128,
+            height: 128
+        });
+    </script>
+</body>
+</html>
